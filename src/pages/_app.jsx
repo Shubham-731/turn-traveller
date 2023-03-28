@@ -20,7 +20,13 @@ export default function App(props) {
   return (
     <CacheProvider value={emotionCache}>
       <Head>
-        <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="description"
+          content="Turntraveller is a flight booking company that offers a user-friendly platform for travelers to easily search and book flights to their desired destinations. With a vast selection of airlines and flight options, Turntraveller provides customers with competitive prices and convenient travel arrangements. The company also offers 24/7 customer support to ensure a seamless booking experience for all customers."
+        />
+        <title>Turn Traveller</title>
       </Head>
       <StyledEngineProvider injectFirst>
         <ThemeProvider theme={theme}>
