@@ -78,7 +78,7 @@ export default function Home() {
     }
   };
 
-  useEffect(() => {
+  /* useEffect(() => {
     const handleScroll = () => {
       if (window.pageYOffset > 100) {
         setShowScrollToTopBtn(true);
@@ -92,7 +92,7 @@ export default function Home() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [window.pageYOffset]);
+  }, [window.pageYOffset]); */
 
   return (
     <>
@@ -105,7 +105,7 @@ export default function Home() {
           <Image src={"/bg_home.jpg"} fill={true} alt="Book flights" />
         </div>
 
-        {showScrollToTopBtn && (
+        {/* {showScrollToTopBtn && (
           <Tooltip arrow title="Scroll to top">
             <button
               className="px-2 pt-2 fixed right-10 bottom-10 rounded-full bg-white bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-50 border border-gray-100 hover:bg-opacity-75 cursor-pointer transition-all"
@@ -114,7 +114,7 @@ export default function Home() {
               <KeyboardArrowUp />
             </button>
           </Tooltip>
-        )}
+        )} */}
 
         <div className="w-full">
           <SearchFlight handleSearch={handleSearchFlight} />
